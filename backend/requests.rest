@@ -1,0 +1,38 @@
+GET http://localhost:3000/api/v1/get-incomes
+
+
+###
+DELETE http://localhost:3000/api/v1/delete-income/658d4b89c9c6f1e053570885
+
+###
+POST http://localhost:3000/api/v1/add-income
+Content-Type: application/json
+
+{
+    "title": "Test",
+    "amount": 5000,
+    "category": "Food",
+    "description": "Test comment",
+    "date": "2021-01-01",
+    "type": "income"
+}
+
+###expenses
+GET http://localhost:3000/api/v1/get-expenses
+
+
+###
+DELETE http://localhost:3000/api/v1/delete-expense/658fd807ff4adf237a9f6229
+
+###
+POST http://localhost:3000/api/v1/add-expense
+Content-Type: application/json
+
+{
+    "title": "Test",
+    "amount": 5000,
+    "category": "Food",
+    "description": "Test comment",
+    "date": "2021-01-01",
+    "type": "income"
+}
